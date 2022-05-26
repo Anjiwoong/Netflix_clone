@@ -2,3 +2,178 @@
 @import url("/style/base.css");
 @import url("/style/a11y.css");
 @import url("/style/theme.css");
+
+/* All Device */
+body {
+  color: var(--netflix-white);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 18px;
+}
+
+.logo {
+  width: 4.625rem;
+  height: 1.25rem;
+  text-indent: -9999px;
+  position: relative;
+}
+
+.logo-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/logo.png") no-repeat 0 0 / cover;
+}
+
+select {
+  padding: 0.375rem;
+  border: 1px solid var(--netflix-gray);
+  border-radius: 0.188rem;
+  width: 4.875rem;
+  background: transparent;
+  color: var(--netflix-gray);
+  margin-right: 0.75rem;
+}
+
+.login-button {
+  background: var(--netflix-red);
+  border-radius: 0.188rem;
+  padding: 0.375rem 1.25rem;
+}
+
+/* MainContent */
+
+.promotion {
+  padding-top: 4.125rem;
+  text-align: center;
+  position: relative;
+}
+.promotion-title {
+  display: block;
+  margin-top: 4.375rem;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 120%;
+  margin-bottom: 1.875rem;
+}
+.promotion-sub {
+  font-weight: 700;
+  font-size: 0.938rem;
+  line-height: 130%;
+  color: var(--netflix-right-gray);
+}
+.promotion-desc {
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 135%;
+  color: var(--netflix-gray);
+  margin: 0.625rem 0 1.875rem;
+}
+.promotion-enter fieldset {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 3.125rem;
+}
+.email-input {
+  width: 15.313rem;
+  height: 2.5rem;
+  border-radius: 1.875rem;
+  text-indent: 1.25rem;
+  border: none;
+}
+.submit-btn {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 150%;
+  background-color: red;
+  border-radius: 1.875rem;
+  margin-top: 0.75rem;
+  border: none;
+  color: var(--netflix-white);
+  width: 10rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promotion-notice {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+  color: #919191;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Mobile (Small Screen) */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    background: url("/assets/images/hero-bg-mobile.png") var(--netflix-black)
+      no-repeat 0 0 / cover;
+  }
+
+  .promotion {
+    padding: 0 1.563rem;
+  }
+}
+
+/* Desktop (Large Screen) */
+@media screen and (min-width: 768px) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+    background: url("/assets/images/hero-bg-desktop.png") var(--netflix-black)
+      no-repeat 0 0;
+  }
+
+  /* Header */
+  .header {
+    width: 1200px;
+    margin: 0.438rem auto 0;
+  }
+
+  .logo {
+    width: 8.75rem;
+    height: 2.375rem;
+  }
+
+  .login-button {
+    padding: 0.5rem 1.25rem;
+  }
+
+  /* MainContent */
+  .promotion-enter fieldset {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .promotion-desc {
+    text-align: center;
+    width: 19.125rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .email-input {
+    width: 33.75rem;
+    border-radius: 0;
+  }
+
+  .submit-btn {
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    width: 8.625rem;
+  }
+}
