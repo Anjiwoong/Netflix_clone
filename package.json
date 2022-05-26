@@ -1,0 +1,22 @@
+{
+  "name": "netflix_clone",
+  "version": "1.0.0",
+  "description": "Netflix_clone",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anjiwoong/Netflix_clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anjiwoong/Netflix_clone/issues"
+  },
+  "homepage": "https://github.com/Anjiwoong/Netflix_clone#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
