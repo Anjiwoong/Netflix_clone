@@ -452,48 +452,48 @@ button {
 /* 임시 */
 footer {
   min-height: 200px;
-  /* Service item list */
-  .service-item {
-    width: 100%;
-    height: 480px;
-    padding: 60px 200px;
-  }
+}
+/* Service item list */
+.service-item {
+  width: 100%;
+  height: 480px;
+  padding: 60px 200px;
+}
 
-  .service-contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.service-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .service-media {
-    width: 300px;
-    height: 300px;
-  }
+.service-media {
+  width: 300px;
+  height: 300px;
+}
 
-  .service-text {
-    width: 50%;
-    margin-left: 20px;
-  }
+.service-text {
+  width: 50%;
+  margin-left: 20px;
+}
 
-  .service-item:nth-child(2) .service-contents {
-    flex-direction: row-reverse;
-  }
+.service-item:nth-child(2) .service-contents {
+  flex-direction: row-reverse;
+}
 
-  /* faq */
-  .faq-list {
-    align-items: center;
-  }
+/* faq */
+.faq-list {
+  align-items: center;
+}
 
-  .faq-item {
-    width: 50rem;
-  }
+.faq-item {
+  width: 50rem;
+}
 
-  /* Footer */
-  .footer-faq {
-    display: flex;
-  }
+/* Footer */
+.footer-faq {
+  display: flex;
+}
 
-  .footer-item {
-    width: 25%;
-  }
+.footer-item {
+  width: 25%;
 }
