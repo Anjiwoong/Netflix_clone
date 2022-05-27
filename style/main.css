@@ -519,15 +519,24 @@ button {
     justify-content: center;
   }
   .service-media {
+    flex-flow: row nowrap;
     width: 50%;
   }
 
   /* Service 2 */
+  .video-container {
+    position: relative;
+  }
+
+  .content-image {
+    width: 100%;
+  }
+
   .download-image {
     display: block;
     position: absolute;
-    top: 67%;
-    right: 32%;
+    top: 68%;
+    right: 16%;
     width: 12%;
   }
 
