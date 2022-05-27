@@ -126,7 +126,10 @@ select {
   margin-top: 2rem;
 }
 
-/* input */
+/* form */
+.promotion-form-size {
+  margin: 5rem;
+}
 
 /* button 
 * 
@@ -252,7 +255,6 @@ button {
 }
 
 .service-media {
-  background-color: #fff;
   width: 340px;
   height: 255px;
   margin: 0 auto;
