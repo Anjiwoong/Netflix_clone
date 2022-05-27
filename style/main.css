@@ -33,6 +33,10 @@ body {
   background: url("/assets/images/logo.png") no-repeat 0 0 / cover;
 }
 
+.member-service {
+  margin: 0;
+}
+
 select {
   padding: 0.5rem 1rem 0.4rem 1rem;
   border: 1px solid var(--netflix-gray);
@@ -47,7 +51,6 @@ select {
 .select-box {
   position: relative;
   margin-right: 0.75rem;
-  margin-top: 1.75rem;
 }
 
 .global {
@@ -367,6 +370,10 @@ button {
   color: var(--netflix-gray);
 }
 
+.footer .select-box {
+  margin-top: 1.75rem;
+}
+
 .footer-item {
   width: 50%;
   margin-bottom: 0.625rem;
@@ -391,10 +398,8 @@ button {
 /* Desktop (Large Screen) */
 @media screen and (min-width: 768px) {
   body {
-    /* width: 1200px; */
-    /* margin: 0 auto; */
     background: url("/assets/images/hero-bg-desktop.png") var(--netflix-black)
-      no-repeat 0 0;
+      no-repeat 0 0 / contain;
   }
   header,
   .footer,
