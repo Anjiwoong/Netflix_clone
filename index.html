@@ -19,23 +19,13 @@
       <h2 class="logo">
         <a href="#" class="logo-link">넷플릭스</a>
       </h2>
-      <div class="member-service">
-        <select name="language" id="language-select">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="16"
-            fill="none"
-            viewBox="0 0 15 16"
-          >
-            <path
-              fill="#757575"
-              d="M7.768 15.5c1.147-.163 2.153-1.363 2.785-3.134a13.585 13.585 0 0 0-2.785-.329V15.5zm1.832-.282l.203-.061c.057-.018.112-.038.168-.057a6.6 6.6 0 0 0 .197-.072c.056-.02.111-.043.167-.066l.19-.08a7.58 7.58 0 0 0 1.342-.767c.05-.036.1-.071.148-.107l.162-.128.143-.115c.053-.045.105-.09.157-.137l.135-.122c.052-.048.101-.098.151-.147l.13-.129.023-.025a9.001 9.001 0 0 0-1.837-.708 6.668 6.668 0 0 1-1.713 2.788l.065-.016.17-.05zM15 8.269h-3.214a13.958 13.958 0 0 1-.542 3.716c.708.19 1.391.462 2.035.811A7.514 7.514 0 0 0 15 8.27zm-7.232-.538h3.481a13.464 13.464 0 0 0-.527-3.584c-.97.222-1.96.34-2.954.353v3.231zm0-7.231v3.463c.937-.013 1.87-.123 2.785-.329C9.921 1.863 8.915.664 7.768.5zm0 11c.994.013 1.984.131 2.954.353.336-1.165.514-2.371.527-3.584H7.77v3.23zm5.511-8.296a9.312 9.312 0 0 1-2.035.811c.347 1.209.53 2.459.542 3.716H15a7.516 7.516 0 0 0-1.721-4.527zm-.362-.408l-.023-.025-.13-.128c-.05-.05-.1-.1-.15-.147l-.136-.122c-.052-.046-.104-.093-.158-.137-.046-.04-.094-.077-.14-.115a5.695 5.695 0 0 0-.311-.235 6.74 6.74 0 0 0-.834-.52l-.16-.083a5.818 5.818 0 0 0-.351-.165c-.064-.029-.128-.054-.192-.081a7.786 7.786 0 0 0-.531-.195 6.549 6.549 0 0 0-.203-.061L9.43.734 9.364.718a6.668 6.668 0 0 1 1.714 2.787 8.986 8.986 0 0 0 1.839-.709zM0 7.731h3.214c.012-1.257.195-2.507.541-3.716a9.301 9.301 0 0 1-2.034-.811A7.514 7.514 0 0 0 0 7.73zM7.232 15.5v-3.463c-.937.013-1.87.123-2.785.329.632 1.771 1.638 2.97 2.785 3.134zm0-7.231H3.75c.014 1.213.192 2.418.528 3.584.97-.222 1.96-.34 2.954-.353V8.269zm0-7.769C6.085.663 5.079 1.863 4.447 3.634a13.58 13.58 0 0 0 2.785.329V.5zm0 4a14.094 14.094 0 0 1-2.954-.353 13.458 13.458 0 0 0-.528 3.584h3.482v-3.23zM5.633.717l-.065.016c-.057.015-.113.032-.17.049a8.79 8.79 0 0 0-.2.06L5.027.9l-.196.071a7.627 7.627 0 0 0-.167.067l-.19.08a7.704 7.704 0 0 0-.847.441l-.174.108a7.041 7.041 0 0 0-.469.326c-.055.041-.107.084-.162.127-.048.038-.096.076-.143.116-.053.044-.104.09-.156.136-.046.04-.092.08-.137.123-.05.047-.1.097-.15.146l-.13.129-.023.025c.585.303 1.2.54 1.837.708A6.665 6.665 0 0 1 5.633.717zm-3.397 12.64c.05.05.1.1.15.147l.136.122c.052.046.104.093.158.137.046.04.093.077.14.114.054.044.108.087.165.13l.146.107a7.519 7.519 0 0 0 .497.328 7.1 7.1 0 0 0 .337.191c.053.027.107.057.16.083a6.16 6.16 0 0 0 .351.166c.064.028.128.054.192.08a8.115 8.115 0 0 0 .363.138l.168.057c.067.022.134.042.203.062l.168.048.066.016a6.669 6.669 0 0 1-1.714-2.788 8.988 8.988 0 0 0-1.837.709l.023.025c.04.043.084.086.128.128zm-.515-.561a9.316 9.316 0 0 1 2.034-.811 13.963 13.963 0 0 1-.54-3.716H0a7.515 7.515 0 0 0 1.721 4.527z"
-            />
-          </svg>
-          <option value="korean">한국어</option>
-          <option value="english">영어</option>
-        </select>
+      <div class="member-service select-box">
+          <select name="language" id="language-select">
+            <option value="korean">한국어</option>
+            <option value="english">영어</option>
+          </select>
+            <img class="global" src="./assets/Icon/global.svg" alt="" />
+            <img class="triangle" src="./assets/Icon/triangle.svg" alt="" />
         <a href="#" class="login-button" role="button">로그인</a>
       </div>
     </header>
@@ -54,12 +44,20 @@
       <em class="promotion-notice" 
         >신규 회원만 이 프로모션을 이용하실 수 있습니다.</em
       >
-      <form action="" class="promotion-enter">
+      <!-- <form action="" class="promotion-enter">
         <legend>회원가입하기</legend>
         <fieldset>
-          <!-- [!] 라벨 -->
           <input type="email" class="email-input" placeholder="이메일 주소" />
           <button type="submit" class="submit-btn">30일 무료 이용 →</button>
+        </fieldset>
+      </form> -->
+
+      <form action="" class="promotion-enter promotion-form-size">
+        <legend>회원가입하기</legend>
+        <fieldset>
+          <label for="email" class="sr-only">이메일</label>
+          <input type="email" class="email-input form-input-email" id="email" placeholder="이메일 주소" />
+          <button type="submit" class="button-arrow button-submit" aria-label="회원가입 가입 버튼">30일 무료 이용</button>
         </fieldset>
       </form>
     </section>
@@ -143,47 +141,84 @@
         <h2 class="faq-title" tabindex="0" >자주 묻는 질문</h2>
         <ul class="faq-list">
           <li class="faq-item">
-            <a href="#" role="button" class="faq-btn">
+            <a href="#" role="button" class="faq-btn is-active">
               넷플릭스란 무엇인가요? <span>+</span>
             </a>
+            <div class="faq-btn-desc">
+              넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+              <br />
+              <br />
+              저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.
+            </div>
           </li>
           <li class="faq-item">
             <a href="#" role="button" class="faq-btn">
               넷플릭스 요금은 얼마인가요? <span>+</span>
             </a>
+            <div class="faq-btn-desc">
+              넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+              <br />
+              <br />
+              저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.
+            </div>
           </li>
           <li class="faq-item">
             <a href="#" role="button" class="faq-btn">
               어디에서 시청할 수 있나요? <span>+</span>
             </a>
+            <div class="faq-btn-desc">
+              넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+              <br />
+              <br />
+              저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.
+            </div>
           </li>
           <li class="faq-item">
             <a href="#" role="button" class="faq-btn">
               멤버십을 해지하려면 어떻게 하나요? <span>+</span>
             </a>
+            <div class="faq-btn-desc">
+              넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+              <br />
+              <br />
+              저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.
+            </div>
           </li>
           <li class="faq-item">
             <a href="#" role="button" class="faq-btn">
               넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?
               <span>+</span>
             </a>
+            <div class="faq-btn-desc">
+              넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+              <br />
+              <br />
+              저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.
+            </div>
           </li>
           <li class="faq-item">
             <a href="#" role="button" class="faq-btn">
               무료 이용에 관해 자세히 알 수 있을까요?
               <span>+</span>
             </a>
+            <div class="faq-btn-desc">
+              넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+              <br />
+              <br />
+              저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.
+            </div>
           </li>
         </ul>
         <p class="faq-desc" tabindex="0">
           시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
           입력하세요.
         </p>
-        <form action="" class="promotion-enter">
+        <form action="" class="promotion-enter promotion-form-size">
           <legend>회원가입하기</legend>
           <fieldset>
-            <input type="email" class="email-input" placeholder="이메일 주소" />
-            <a href="#" type="submit" class="submit-btn">30일 무료 이용 -></a>
+            <label for="email" class="sr-only">이메일</label>
+            <input type="email" class="email-input form-input-email" id="email" placeholder="이메일 주소" />
+            <button type="submit" class="button-arrow button-submit" aria-label="회원가입 가입 버튼">30일 무료 이용</button>
           </fieldset>
         </form>
       </section>
@@ -244,22 +279,14 @@
           <a href="#" class="footer-link">Netflix 오리지널</a>
         </li>
       </ul>
-      <select name="language" id="language-select">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="15"
-          height="16"
-          fill="none"
-          viewBox="0 0 15 16"
-        >
-          <path
-            fill="#757575"
-            d="M7.768 15.5c1.147-.163 2.153-1.363 2.785-3.134a13.585 13.585 0 0 0-2.785-.329V15.5zm1.832-.282l.203-.061c.057-.018.112-.038.168-.057a6.6 6.6 0 0 0 .197-.072c.056-.02.111-.043.167-.066l.19-.08a7.58 7.58 0 0 0 1.342-.767c.05-.036.1-.071.148-.107l.162-.128.143-.115c.053-.045.105-.09.157-.137l.135-.122c.052-.048.101-.098.151-.147l.13-.129.023-.025a9.001 9.001 0 0 0-1.837-.708 6.668 6.668 0 0 1-1.713 2.788l.065-.016.17-.05zM15 8.269h-3.214a13.958 13.958 0 0 1-.542 3.716c.708.19 1.391.462 2.035.811A7.514 7.514 0 0 0 15 8.27zm-7.232-.538h3.481a13.464 13.464 0 0 0-.527-3.584c-.97.222-1.96.34-2.954.353v3.231zm0-7.231v3.463c.937-.013 1.87-.123 2.785-.329C9.921 1.863 8.915.664 7.768.5zm0 11c.994.013 1.984.131 2.954.353.336-1.165.514-2.371.527-3.584H7.77v3.23zm5.511-8.296a9.312 9.312 0 0 1-2.035.811c.347 1.209.53 2.459.542 3.716H15a7.516 7.516 0 0 0-1.721-4.527zm-.362-.408l-.023-.025-.13-.128c-.05-.05-.1-.1-.15-.147l-.136-.122c-.052-.046-.104-.093-.158-.137-.046-.04-.094-.077-.14-.115a5.695 5.695 0 0 0-.311-.235 6.74 6.74 0 0 0-.834-.52l-.16-.083a5.818 5.818 0 0 0-.351-.165c-.064-.029-.128-.054-.192-.081a7.786 7.786 0 0 0-.531-.195 6.549 6.549 0 0 0-.203-.061L9.43.734 9.364.718a6.668 6.668 0 0 1 1.714 2.787 8.986 8.986 0 0 0 1.839-.709zM0 7.731h3.214c.012-1.257.195-2.507.541-3.716a9.301 9.301 0 0 1-2.034-.811A7.514 7.514 0 0 0 0 7.73zM7.232 15.5v-3.463c-.937.013-1.87.123-2.785.329.632 1.771 1.638 2.97 2.785 3.134zm0-7.231H3.75c.014 1.213.192 2.418.528 3.584.97-.222 1.96-.34 2.954-.353V8.269zm0-7.769C6.085.663 5.079 1.863 4.447 3.634a13.58 13.58 0 0 0 2.785.329V.5zm0 4a14.094 14.094 0 0 1-2.954-.353 13.458 13.458 0 0 0-.528 3.584h3.482v-3.23zM5.633.717l-.065.016c-.057.015-.113.032-.17.049a8.79 8.79 0 0 0-.2.06L5.027.9l-.196.071a7.627 7.627 0 0 0-.167.067l-.19.08a7.704 7.704 0 0 0-.847.441l-.174.108a7.041 7.041 0 0 0-.469.326c-.055.041-.107.084-.162.127-.048.038-.096.076-.143.116-.053.044-.104.09-.156.136-.046.04-.092.08-.137.123-.05.047-.1.097-.15.146l-.13.129-.023.025c.585.303 1.2.54 1.837.708A6.665 6.665 0 0 1 5.633.717zm-3.397 12.64c.05.05.1.1.15.147l.136.122c.052.046.104.093.158.137.046.04.093.077.14.114.054.044.108.087.165.13l.146.107a7.519 7.519 0 0 0 .497.328 7.1 7.1 0 0 0 .337.191c.053.027.107.057.16.083a6.16 6.16 0 0 0 .351.166c.064.028.128.054.192.08a8.115 8.115 0 0 0 .363.138l.168.057c.067.022.134.042.203.062l.168.048.066.016a6.669 6.669 0 0 1-1.714-2.788 8.988 8.988 0 0 0-1.837.709l.023.025c.04.043.084.086.128.128zm-.515-.561a9.316 9.316 0 0 1 2.034-.811 13.963 13.963 0 0 1-.54-3.716H0a7.515 7.515 0 0 0 1.721 4.527z"
-          />
-        </svg>
-        <option value="korean">한국어</option>
-        <option value="english">영어</option>
-      </select>
+      <div class="select-box">
+        <select name="language" id="language-select">
+          <option value="korean">한국어</option>
+          <option value="english">영어</option>
+        </select>
+          <img class="global" src="./assets/Icon/global.svg" alt="" />
+          <img class="triangle" src="./assets/Icon/triangle.svg" alt="" />
+      </div>
 
       <div class="footer-desc-container">
         <p class="footer-title">Netflix 대한민국</p>
@@ -281,20 +308,5 @@
         <p class="footer-desc">공정거래위원회 웹사이트</p>
       </div>
     </footer>
-    <div class="atom-test-area">
-      <input type="email" class="form-input-email" placeholder="이메일 주소" />
-      <a href="#" class="login-button" role="button">로그인</a>
-      <button class="button-arrow button-submit">30일 무료 이용</button>
-
-      <h3 class="service-header-text">What is Lorem Ipsum?</h3>
-      <p class="service-desc-text">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-      </p>
-    </div>
   </body>
 </html>
