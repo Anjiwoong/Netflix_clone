@@ -252,7 +252,6 @@ button {
 }
 
 .service-media {
-  background-color: #fff;
   width: 340px;
   height: 255px;
   margin: 0 auto;
@@ -452,6 +451,7 @@ button {
 /* 임시 */
 footer {
   min-height: 200px;
+}
   /* Service item list */
   .service-item {
     width: 100%;
@@ -496,4 +496,4 @@ footer {
   .footer-item {
     width: 25%;
   }
-}
+
