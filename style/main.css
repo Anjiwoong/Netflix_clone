@@ -367,9 +367,9 @@ button {
 
 .faq-btn {
   display: block;
+  position: relative;
   width: 100%;
   padding: 0.688rem 0 0.688rem 0.688rem;
-  position: relative;
 }
 
 .faq-btn span {
@@ -380,9 +380,20 @@ button {
   right: 0.75rem;
 }
 
+.faq-btn-desc {
+  border-top: 1px solid var(--netflix-black);
+  padding-top: 1rem;
+  padding: 0.688rem 0.688rem 0.688rem 0.688rem;
+  display: none;
+}
+
 .faq-desc {
   text-align: center;
   margin: 1.875rem;
+}
+
+.is-active ~ .faq-btn-desc {
+  display: block;
 }
 
 /* Footer */
