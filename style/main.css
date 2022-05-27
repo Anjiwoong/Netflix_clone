@@ -152,12 +152,13 @@ select {
 .promotion-form-size {
   margin: 4rem auto;
   max-width: 70rem;
+  padding: 1.5rem auto;
 }
 
 /* input */
 .form-input-email {
   background: var(--netflix-white);
-  width: 100%;
+  width: 70%;
   height: 2.5rem;
   border-radius: 2rem;
   padding: 1.25rem;
