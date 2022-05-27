@@ -104,6 +104,7 @@ select {
   justify-content: center;
   align-items: center;
 }
+
 .promotion-notice {
   font-weight: 400;
   font-size: 0.75rem;
@@ -135,44 +136,64 @@ button {
   font-size: 0.75rem;
   padding: 0.75rem 1.25rem;
   text-align: center;
+  line-height: 150%;
 }
 
 .button-arrow::after {
+  border: 0;
+  background: url(/assets/Icon/arrow.svg) no-repeat 50% 50%;
+  background-size: contain;
   content: "";
-  width: 0.625em;
-  height: 0.625em;
-  background-image: url(/assets/Icon/arrow.svg);
+  display: inline-block;
+  width: 1.375em;
+  height: 0.875em;
+  margin-left: 0.625rem;
 }
 
-.button-red {
-}
-
-.button-edge-round {
+.button-login {
+  background: var(--netflix-red);
   border-radius: 0.25rem;
-}
-
-.button-submit {
   padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
-  line-height: 2.5rem;
-  border-radius: 50rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
 }
 
 .button-submit {
-  padding: 1.125rem 1.25rem;
-  font-size: 1.375rem;
+  display: flex;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  align-items: center;
+  margin-top: 0.75rem;
 }
 
 /* input */
+.form-input-email {
+  background: var(--netflix-white);
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 2rem;
+  padding: 1.25rem;
+  color: var(--netflix-gray);
+}
 
+.form-input-email:focus {
+  outline: -0.5rem;
+}
 /* text */
-.service-contents-header {
+.service-header-text {
   font-weight: 700;
   font-size: 1.5rem;
+  letter-spacing: 0.0005em;
 }
-.service-contents-desc {
+.service-desc-text {
   font-weight: 400;
   font-size: 1rem;
+  color: var(--netflix-gray);
+  letter-spacing: 0.0005em;
 }
 /* Mobile (Small Screen) */
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -237,21 +258,35 @@ button {
   }
 
   /* button */
+  .button-login {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+  }
+
   .button-submit {
     padding: 1.125rem 1.25rem;
     font-size: 1.375rem;
+    border-radius: 0;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    margin: 0;
   }
 
   /* input */
+  .form-input-email {
+    height: 4rem;
+    border-radius: 0;
+  }
 
   /* text */
-  .service-contents-header {
+  .service-header-text {
     font-weight: 700;
     font-size: 3rem;
     line-height: 120%;
   }
 
-  .service-contents-desc {
+  .service-desc-text {
     font-weight: 400;
     font-size: 1.625rem;
   }
