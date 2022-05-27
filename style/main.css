@@ -210,6 +210,7 @@ button {
   text-align: center;
   width: 375px;
   height: 556px;
+  margin: 0 auto;
 }
 
 .service-contents {
@@ -221,7 +222,7 @@ button {
   background-color: #fff;
   width: 340px;
   height: 255px;
-  margin-left: 10px;
+  margin: 0 auto;
 }
 
 /* faq */
@@ -270,10 +271,6 @@ button {
 
 .footer-desc {
   line-height: 1.313rem;
-}
-
-/* Mobile (Small Screen) */
-@media screen and (min-width: 320px) and (max-width: 768px) {
 }
 
 /* Desktop (Large Screen) */
@@ -382,20 +379,8 @@ button {
     margin-left: 20px;
   }
 
-  .service-item .service-text {
-    float: left;
-  }
-
-  .service-item .service-media {
-    float: right;
-  }
-
-  .service-item:nth-child(even) .service-text {
-    float: right;
-  }
-
-  .service-item:nth-child(even) .service-media {
-    float: left;
+  .service-item:nth-child(2) .service-contents {
+    flex-direction: row-reverse;
   }
 
   /* Footer */
