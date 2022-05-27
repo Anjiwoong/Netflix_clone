@@ -34,13 +34,35 @@ body {
 }
 
 select {
-  padding: 0.375rem;
+  padding: 0.5rem 1rem 0.4rem 1rem;
   border: 1px solid var(--netflix-gray);
   border-radius: 0.188rem;
-  width: 4.875rem;
+  width: 6.5rem;
   background: transparent;
-  color: var(--netflix-gray);
+  color: var(--netflix-gray);  
+  appearance: none;
+  text-indent: 12px;
+}
+
+.select-box {
+  position: relative;
   margin-right: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.global {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+}
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-25%);
+  left: 80px;
+  z-index: -1;
 }
 
 .login-button {
@@ -367,9 +389,10 @@ button {
 
 .faq-btn {
   display: block;
+  position: relative;
   width: 100%;
   padding: 0.688rem 0 0.688rem 0.688rem;
-  position: relative;
+  font-size: 1.1rem;
 }
 
 .faq-btn span {
@@ -377,12 +400,25 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 0.75rem;
+  right: 0.9rem;
+  font-size: 1.5rem;
+}
+
+.faq-btn-desc {
+  border-top: 1px solid var(--netflix-black);
+  padding-top: 1rem;
+  padding: 0.688rem 0.688rem 0.688rem 0.688rem;
+  font-size: 1rem;
+  display: none;
 }
 
 .faq-desc {
   text-align: center;
   margin: 1.875rem;
+}
+
+.is-active ~ .faq-btn-desc {
+  display: block;
 }
 
 /* Footer */
@@ -408,9 +444,6 @@ button {
   margin-bottom: 0.625rem;
 }
 
-#language-select {
-  margin-top: 1.75rem;
-}
 
 .footer-desc-container {
   margin-top: 2.375rem;
@@ -454,6 +487,7 @@ button {
 
   .login-button {
     padding: 0.5rem 1.25rem;
+    margin-left: 1rem;
   }
 
   /* MainContent */
