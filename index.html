@@ -54,12 +54,20 @@
       <em class="promotion-notice"
         >신규 회원만 이 프로모션을 이용하실 수 있습니다.</em
       >
-      <form action="" class="promotion-enter">
+      <!-- <form action="" class="promotion-enter">
         <legend>회원가입하기</legend>
         <fieldset>
-          <!-- [!] 라벨 -->
           <input type="email" class="email-input" placeholder="이메일 주소" />
           <button type="submit" class="submit-btn">30일 무료 이용 -></button>
+        </fieldset>
+      </form> -->
+
+      <form action="" class="promotion-enter promotion-form-size">
+        <legend>회원가입하기</legend>
+        <fieldset>
+          <label for="email" class="sr-only">이메일</label>
+          <input type="email" class="email-input form-input-email" id="email" placeholder="이메일 주소" />
+          <button type="submit" class="button-arrow button-submit" aria-label="회원가입 가입 버튼">30일 무료 이용</button>
         </fieldset>
       </form>
     </section>
@@ -79,7 +87,7 @@
           </article>
           <div class="service-media">
             <figure class="video-container">
-              <img src="./assets/images/tv.png" alt="" />            
+              <img src="./assets/images/tv.png" alt="" class="tv-image"/>            
               <video class="video-device-item" muted autoplay playsinline
               poster="./assets/images/tv-content.png">
               <source src="./assets/video/video-tv-0819.mp4" type="video/mp4" />
@@ -102,7 +110,7 @@
           </article>
           <div class="service-media">
          <!-- 다빈1 -->
-        <figure>
+        <figure class="video-container">
           <img src="./assets/images/content-save.png" class="content-image" alt="">
           <img src="./assets/images/download-icon.gif" class="download-image" alt="">
           <figcaption class="sr-only">설명필요</figcaption>
@@ -125,9 +133,9 @@
           <div class="service-media">
                <!-- 다빈3 -->
                <figure class="video-container">
-                <img src="./assets/images/device-pile.png" class="tv-cover-image" alt=""/>
-                <video class="video-item" muted autoplay playsinline
-                 poster="./assets/images/media-frame.png">
+                <img src="./assets/images/device-pile.png"  class="tv-cover-image" alt=""/>
+                <video class="dustin-video" muted autoplay playsinline
+                 poster="./assets/images/media-frame.png" >
                   <source src="./assets/video/video-devices.mp4" type="video/mp4" />
                 </video>
                 <figcaption class="sr-only">설명필요</figcaption>
@@ -179,11 +187,12 @@
           시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
           입력하세요.
         </p>
-        <form action="" class="promotion-enter">
+        <form action="" class="promotion-enter promotion-form-size">
           <legend>회원가입하기</legend>
           <fieldset>
-            <input type="email" class="email-input" placeholder="이메일 주소" />
-            <a href="#" type="submit" class="submit-btn">30일 무료 이용 -></a>
+            <label for="email" class="sr-only">이메일</label>
+            <input type="email" class="email-input form-input-email" id="email" placeholder="이메일 주소" />
+            <button type="submit" class="button-arrow button-submit" aria-label="회원가입 가입 버튼">30일 무료 이용</button>
           </fieldset>
         </form>
       </section>
@@ -281,30 +290,5 @@
         <p class="footer-desc">공정거래위원회 웹사이트</p>
       </div>
     </footer>
-    <div class="atom-test-area">
-
-      <form action="" class="promotion-enter promotion-form-size">
-        <legend>회원가입하기</legend>
-        <fieldset>
-          <label for="email" class="sr-only">이메일</label>
-          <input type="email" class="email-input" id="email" placeholder="이메일 주소" />
-          <button type="submit" class="submit-btn" aria-label="회원가입 가입 버튼">30일 무료 이용 -></button>
-        </fieldset>
-      </form>
-
-      <input type="email" class="form-input-email" placeholder="이메일 주소" />
-      <a href="#" class="login-button" role="button">로그인</a>
-      <button class="button-arrow button-submit">30일 무료 이용</button>
-
-      <h3 class="service-header-text">What is Lorem Ipsum?</h3>
-      <p class="service-desc-text">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-      </p>
-    </div>
   </body>
 </html>
