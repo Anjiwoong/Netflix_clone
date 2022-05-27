@@ -370,6 +370,7 @@ button {
   position: relative;
   width: 100%;
   padding: 0.688rem 0 0.688rem 0.688rem;
+  font-size: 1.1rem;
 }
 
 .faq-btn span {
@@ -377,13 +378,15 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 0.75rem;
+  right: 0.9rem;
+  font-size: 1.5rem;
 }
 
 .faq-btn-desc {
   border-top: 1px solid var(--netflix-black);
   padding-top: 1rem;
   padding: 0.688rem 0.688rem 0.688rem 0.688rem;
+  font-size: 1rem;
   display: none;
 }
 
@@ -442,7 +445,7 @@ button {
 /* Desktop (Large Screen) */
 @media screen and (min-width: 768px) {
   body {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     background: url("/assets/images/hero-bg-desktop.png") var(--netflix-black)
       no-repeat 0 0;
