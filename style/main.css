@@ -39,7 +39,7 @@ select {
   border-radius: 0.188rem;
   width: 6.5rem;
   background: transparent;
-  color: var(--netflix-gray);  
+  color: var(--netflix-gray);
   appearance: none;
   text-indent: 12px;
 }
@@ -209,7 +209,6 @@ button {
   white-space: nowrap;
 }
 
-
 /* text */
 .service-contents-header {
   margin-bottom: 1.25rem;
@@ -227,74 +226,6 @@ button {
   letter-spacing: 0.0005em;
 }
 
-/* Service item list */
-
-/* .service-item {
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  width: 100%;
-}
-
-.service-media {
-  width: 100%;
-}
-
-.promotion {
-  padding: 0 1.563rem;
-} */
-
-/* media images */
-/* .device-image {
-  width: 338px;
-  height: 254px;
-  margin: 0 18px 0 18px;
-}
-.content-image {
-  width: 337px;
-  height: 253px;
-  margin: 0 18px 0 18px;
-}
-.download-image {
-  width: 45px;
-  height: 45px;
-}
-
-.video-item {
-  width: 210px;
-}
-.tv-cover-image {
-  width: 339px;
-  height: 255px;
-}
-
-.video-device-item {
-  width: 265px;
-}
-.service-contents {
-  height: 100%;
-}
-
-.service-media {
-  width: 340px;
-  height: 255px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.tv-cover-image {
-  display: block;
-}
-
-.video-item {
-  position: absolute;
-  top: 10%;
-  left: 20%;
-  z-index: -1;
-} */
-
-/* Service Area */
-
 .service-item {
   border-top: 1px solid var(--netflix-gray);
   padding: 5rem 0;
@@ -306,10 +237,6 @@ button {
   width: 100%;
   justify-content: center;
   height: 56.28%;
-}
-
-.service-text {
-  /* width: 100%; */
 }
 
 .service-contents-header {
@@ -444,7 +371,6 @@ button {
   margin-bottom: 0.625rem;
 }
 
-
 .footer-desc-container {
   margin-top: 2.375rem;
   color: var(--netflix-gray);
@@ -469,7 +395,9 @@ button {
     background: url("/assets/images/hero-bg-desktop.png") var(--netflix-black)
       no-repeat 0 0;
   }
-  header, .footer, .service-contents{
+  header,
+  .footer,
+  .service-contents {
     max-width: 75rem;
     margin: 0 auto;
   }
@@ -528,7 +456,6 @@ button {
     line-height: 2.5rem;
     font-size: 1rem;
   }
-  
 
   .button-submit {
     padding: 1.125rem 1.25rem;
@@ -557,25 +484,6 @@ button {
     font-weight: 400;
     font-size: 1.625rem;
   }
-  /* media images */
-  /* .device-image,
-  .content-image,
-  .tv-cover-image {
-    width: 480px;
-    height: 360px;
-  }
-  .video-device-item {
-    width: 339px;
-    height: 255px;
-  }
-
-  .video-item {
-    width: 300px;
-  }
-  .download-image {
-    width: 60px;
-    height: 60px;
-  } */
 
   /* Service */
   .service-text {
@@ -598,55 +506,29 @@ button {
     width: 12%;
   }
 
-.service-item:nth-child(2) .service-contents {
-  flex-direction: row-reverse;
-}
+  .service-item:nth-child(2) .service-contents {
+    flex-direction: row-reverse;
+  }
 
-/* faq */
-.faq-list {
-  align-items: center;
-}
+  /* faq */
+  .faq-list {
+    align-items: center;
+  }
 
-.faq-item {
-  width: 50rem;
-}
+  .faq-item {
+    width: 50rem;
+  }
 
-/* Footer */
-.footer-faq {
-  display: flex;
-}
+  /* Footer */
+  .footer-faq {
+    display: flex;
+  }
 
-.footer-item {
+  .footer-item {
     width: 25%;
   }
 
-/* 임시 */
-footer {
-  min-height: 200px;
-}
-/* Service item list */
-/* .service-item {
-  width: 100%;
-  height: 480px;
-  padding: 60px 200px;
-}
-
-.service-contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.service-media {
-  width: 300px;
-  height: 300px;
-}
-
-.service-text {
-  width: 50%;
-  margin-left: 20px;
-}
-*/
-.service-item:nth-child(2) .service-contents {
-  flex-direction: row-reverse;
+  .service-item:nth-child(2) .service-contents {
+    flex-direction: row-reverse;
+  }
 }
