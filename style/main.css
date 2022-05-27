@@ -56,6 +56,7 @@ select {
 
   text-align: center;
   position: relative;
+  margin-bottom: 5rem;
 }
 .promotion-title {
   display: block;
@@ -205,20 +206,24 @@ button {
 }
 
 /* Service item list */
-.service-item {
-  display: block;
+
+/* .service-item {
+  display: flex;
+  flex-flow: column wrap;
   text-align: center;
-  width: 375px;
-  height: 556px;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.service-media {
+  width: 100%;
 }
 
 .promotion {
   padding: 0 1.563rem;
-}
+} */
 
 /* media images */
-.device-image {
+/* .device-image {
   width: 338px;
   height: 254px;
   margin: 0 18px 0 18px;
@@ -235,19 +240,16 @@ button {
 
 .video-item {
   width: 210px;
-  /* margin: 0 18px 0 18px; */
 }
 .tv-cover-image {
   width: 339px;
   height: 255px;
-  /* margin: 0 18px 0 18px; */
 }
 
 .video-device-item {
   width: 265px;
 }
 .service-contents {
-  /* background-color: coral; */
   height: 100%;
 }
 
@@ -255,6 +257,88 @@ button {
   width: 340px;
   height: 255px;
   margin: 0 auto;
+  position: relative;
+}
+
+.tv-cover-image {
+  display: block;
+}
+
+.video-item {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  z-index: -1;
+} */
+
+/* Service Area */
+
+.service-item {
+  border-top: 1px solid var(--netflix-gray);
+  padding: 5rem 0;
+}
+
+.service-contents {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  height: 56.28%;
+}
+
+.service-text {
+  /* width: 100%; */
+}
+
+.service-contents-header {
+  text-align: center;
+}
+
+.service-contents-desc {
+  padding: 0 3rem;
+}
+
+/* Service 1 */
+.service-media {
+  margin-top: 5rem;
+}
+
+.video-container {
+  position: relative;
+}
+
+.tv-image {
+  width: 100%;
+}
+
+.video-device-item {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: -1;
+  width: 80%;
+}
+
+/* Service 2 */
+.download-image {
+  display: block;
+  position: absolute;
+  top: 67%;
+  right: 14%;
+  width: 15%;
+}
+
+/* Service 3 */
+.tv-cover-image {
+  width: 100%;
+}
+
+.dustin-video {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  z-index: -1;
 }
 
 /* faq */
@@ -428,7 +512,7 @@ button {
     font-size: 1.625rem;
   }
   /* media images */
-  .device-image,
+  /* .device-image,
   .content-image,
   .tv-cover-image {
     width: 480px;
@@ -445,38 +529,27 @@ button {
   .download-image {
     width: 60px;
     height: 60px;
-  }
-}
+  } */
 
-/* 임시 */
-footer {
-  min-height: 200px;
-}
-  /* Service item list */
-  .service-item {
-    width: 100%;
-    height: 480px;
-    padding: 60px 200px;
-  }
-
-  .service-contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .service-media {
-    width: 300px;
-    height: 300px;
-  }
-
+  /* Service */
   .service-text {
     width: 50%;
-    margin-left: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .service-media {
+    width: 50%;
   }
 
-  .service-item:nth-child(2) .service-contents {
-    flex-direction: row-reverse;
+  /* Service 2 */
+  .download-image {
+    display: block;
+    position: absolute;
+    top: 67%;
+    right: 32%;
+    width: 12%;
   }
 
   /* faq */
@@ -496,4 +569,35 @@ footer {
   .footer-item {
     width: 25%;
   }
+}
 
+/* 임시 */
+footer {
+  min-height: 200px;
+}
+/* Service item list */
+/* .service-item {
+  width: 100%;
+  height: 480px;
+  padding: 60px 200px;
+}
+
+.service-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-media {
+  width: 300px;
+  height: 300px;
+}
+
+.service-text {
+  width: 50%;
+  margin-left: 20px;
+}
+*/
+.service-item:nth-child(2) .service-contents {
+  flex-direction: row-reverse;
+}
